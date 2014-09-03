@@ -38,3 +38,5 @@ gem 'spring',        group: :development
 # Use debugger
 gem 'pry', group: [:development, :test]
 
+gem 'pg', '0.12.2',group: :production
+
