@@ -1,0 +1,2 @@
+module RandomisationSessionsHelper
+end

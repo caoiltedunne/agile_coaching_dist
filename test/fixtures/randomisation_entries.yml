@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  object: MyString
+  action: MyString
+  randomisation_session_id: 1
+
+two:
+  object: MyString
+  action: MyString
+  randomisation_session_id: 1

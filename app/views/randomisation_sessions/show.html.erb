@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @randomisation_session.name %>
+</p>
+
+<%= link_to 'Edit', edit_randomisation_session_path(@randomisation_session) %> |
+<%= link_to 'Join', join_randomisation_session_path(@randomisation_session) %> |
+<%= link_to 'Back', randomisation_sessions_path %>

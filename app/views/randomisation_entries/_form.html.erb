@@ -1,0 +1,26 @@
+<div>Enter the activity and object</div>
+<%= form_for([@randomisation_session,@randomisation_entry]) do |f| %>
+  <% if @randomisation_entry.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@randomisation_entry.errors.count, "error") %> prohibited this randomisation_entry from being saved:</h2>
+
+      <ul>
+      <% @randomisation_entry.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :object %><br>
+    <%= f.text_field :object %>
+  </div>
+  <div class="field">
+    <%= f.label :action %><br>
+    <%= f.text_field :action %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

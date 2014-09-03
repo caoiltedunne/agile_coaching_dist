@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Object:</strong>
+  <%= @randomisation_entry.object %>
+</p>
+
+<p>
+  <strong>Action:</strong>
+  <%= @randomisation_entry.action %>
+</p>
+
+<p>
+  <strong>Randomisation session:</strong>
+  <%= @randomisation_entry.randomisation_session_id %>
+</p>
+
+<%= link_to 'Edit', edit_randomisation_entry_path(@randomisation_entry) %> |
+<%= link_to 'Back', randomisation_entries_path %>

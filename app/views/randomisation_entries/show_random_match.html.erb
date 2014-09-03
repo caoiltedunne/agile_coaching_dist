@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Object:</strong>
+  <%= @randomisation_entry.get_random_object %>
+</p>
+
+<p>
+  <strong>Action:</strong>
+  <%= @randomisation_entry.get_random_action %>
+</p>
+
+
+<%= link_to 'Back', randomisation_session_path(@randomisation_session) %>
