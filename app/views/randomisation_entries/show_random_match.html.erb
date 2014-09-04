@@ -1,14 +1,11 @@
 <p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Object:</strong>
-  <%= @randomisation_entry.get_random_object %>
+<p>So once everyone has entered there object and activity then refesh and explain how this
+  Object 
+  <strong><%= @randomisation_entry.get_random_object %></strong>
+  works with this
+  Action 
+  <strong><%= @randomisation_entry.get_random_action %></strong>
 </p>
-
-<p>
-  <strong>Action:</strong>
-  <%= @randomisation_entry.get_random_action %>
-</p>
-
+<P> Have fun :) </p>
 
 <%= link_to 'Back', randomisation_session_path(@randomisation_session) %>
